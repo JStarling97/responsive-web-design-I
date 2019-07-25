@@ -1,3 +1,259 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Courier New', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Courier', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  
+}
+
+/* Your code starts here! */
+
+@media (max-width: 800px) {
+    body {
+        background: blue;
+    }
+}
+
+
+.container a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px;
+    text-decoration: none;
+    border-color: teal;
+    top: 50px;
+    display: inline-block;
+    color: lightblue;
+    transition: all 0.15s;
+}
+
+
+    a:hover {
+        background-color: darkcyan;
+        text-shadow: 0 0 2em rgba(255,255,255,1);
+        border-color: #FFFFFF;
+        
+        
+    }
+
+a:active {
+    background-color: darkcyan;
+    color: aqua; 
+}
+
+.gsbutton {
+    top: 150px;
+    right: 27%;
+    position: relative;
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    margin: 5px;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New',sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+    
+}
+
+.gsbutton:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: Highlight;
+    border-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+.gsbutton {
+    display: inline-block;
+    margin: 0.4em auto;
+}
+}
+
+.container .logo {
+    padding: 20px;
+    display: inline-block;
+    margin-left: 43%;
+    
+}
+
+.logo-con {
+    font-size: 100px;
+    width: 900px;
+    margin: auto;
+
+    
+}
+.line {
+    width: 95%;
+    height: 20px;
+    border-bottom: 1px solid black;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.logo-con .moto {
+    text-align: justify;
+    top: 120px;
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    padding-top: 20px;
+    text-align: left;
+    margin-right: 30%;
+    font-weight: bold;
+    font-family: 'Courier New', sans-serif;
+}
+
+.logo1 {
+   
+   margin-left: 50%;
+   display: inline-block;
+   position: relative;
+   bottom: 200px;
+   left: 150px;
+}
+
+.information {
+    margin: 30px;
+    
+}
+
+.information .middle-img {
+    display: block;
+    margin: 20px;
+    width: 97%;
+    
+}
+
+.information heading {
+    font-size: 25px;
+    font-family: 'Courier New',sans-serif;
+    font-weight: bold;
+}
+
+
+
+.copywrite {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact heading {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact p {
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.features {
+    display: inline-block;
+    width: 49%;
+}
+
+.about {
+    display: inline-block;
+    width: 49%;
+}
+
+.services {
+    display: inline-block;
+    width: 30%;
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+}
+
+.vision {
+    display: inline-block;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
