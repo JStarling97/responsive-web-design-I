@@ -70,8 +70,10 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 @media (max-width: 800px) {
-    body {
-        background: blue;
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
