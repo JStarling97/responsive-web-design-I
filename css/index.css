@@ -1,3 +1,468 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+
+}
+
+/* Your code starts here! */
+
+
+body {
+    width: 880px;
+    margin: 0 auto;
+}
+
+
+.header .navigation a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-color: teal;
+    display: flex;
+    color: lightblue;
+    transition: all 0.15s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header .navigation a:hover {
+    background-color: darkcyan;
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    border-color: #FFFFFF;
+}
+
+.header .nav a:active {
+    background-color: darkcyan;
+    color: aqua;
+}
+
+.gsbutton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    margin: 0 auto;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+
+}
+
+.gsbutton:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: Highlight;
+    border-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+    .gsbutton {
+        display: inline-block;
+        margin: 0.4em auto;
+    }
+}
+
+.container .logo {
+    padding: 20px;
+
+}
+
+.logo-con .moto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100px;
+    text-align: center;
+}
+
+.logo-con {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo1 {
+    width: 300px;
+    height: 300px;
+}
+
+.information {
+    margin: 30px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+
+}
+
+.information .middle-img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.copywrite {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact {
+    border-top: 1px solid black;
+}
+
+.contact h2 {
+    margin-top: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+
+.features {
+    display: inline-block;
+    width: 49.5%;
+}
+
+.about {
+    display: inline-block;
+    width: 49.5%;
+}
+
+.spv {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+
+/* @media Queries 800px*/
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .header .navigation {
+        width: 85%;
+    }
+
+    .header .navigation a {
+        margin: 0;
+    }
+
+    .header .logo {
+        margin: auto;
+    }
+
+
+    .logo1 {
+        display: none;
+    }
+
+    .logo-con .moto {
+        margin-top: 30px;
+        justify-items: center;
+    }
+
+    .logo-con .gsbutton {
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .logo-con {
+        height: 10%;
+    }
+
+    .body-page p {
+        font-size: 20px;
+    }
+
+    .information .p1 {
+        margin-right: 10px;
+    }
+
+    .information h2 {
+        font-size: 20px;
+    }
+
+    .spv p {
+        margin-right: 15px;
+    }
+
+}
+
+/* @media Queries 500px */
+
+@media (max-width: 500px) {
+
+    body{
+        width: 500px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .header .logo {
+        justify-content: center;
+
+    }
+
+    .logo-con .moto {
+        font-size: 60px;
+        justify-content: center;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    .body-page {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .header .navigation {
+        border-top: 1px solid black;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navigation a {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .header .navigation a {
+        display: flex;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .logo-con .moto {
+        margin-left: 5%;
+    }
+
+    .logo-con .gsbutton {
+        padding: 10px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .information .middle-img {
+        width: 95%;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .spv {
+        flex-direction: column;
+    }
+
+    .information h2 {
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .information .p1 {
+        width: 200%;
+    }
+
+    .information .p2 {
+        width: 200%;
+    }
+
+    .information p {
+        width: 100%;
+    }
+
+    .contact {
+        margin-left: 30px;
+    }
+
+    .copywrite {
+        margin-top: 40px;
+    }
+
+
+}
